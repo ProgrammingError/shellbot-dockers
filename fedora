@@ -1,0 +1,27 @@
+#inherit fedora docker
+FROM fedora:latest
+
+
+#update repositories and upgrade dependencies
+RUN dnf upgrade -y
+RUN dnf install -y automake \
+                   bash \
+                   git \
+                   gcc \
+                   gcc-c++ \
+                   kernel-devel \
+                   make \
+                   neofetch \
+                   nodejs \
+                   pip \
+                   python \
+                   sudo
+
+#copy the entire source
+COPY . .
+
+#install nodejs dependencies
+RUN npm install
+
+#run
+CMD ["node","server"]
