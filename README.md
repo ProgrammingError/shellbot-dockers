@@ -4,7 +4,11 @@
 
 2)fedora
 
-3)arch[wip]
+3)alpine
+
+4)arch[wip]
+
+5)ubuntu[wip]
 
 
 Licensed under MIT 
