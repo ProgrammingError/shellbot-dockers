@@ -6,9 +6,7 @@
 
 3)alpine
 
-4)arch[wip]
-
-5)ubuntu[wip]
+4)arch
 
 
 Licensed under MIT 
