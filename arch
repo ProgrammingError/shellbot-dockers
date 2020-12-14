@@ -1,4 +1,4 @@
-#inherit ubuntu node docker
+#inherit archlinux docker
 FROM archlinux:latest
 
 #update repositories and upgrade dependencies
