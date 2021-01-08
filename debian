@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 
 ENV LANG en_US.utf8
 
 #add non-free repo
+RUN apt update -y && apt install software-properties-common && apt update -y && apt upgrade -y
 RUN rm -rf /var/lib/apt/lists/* && \
     apt-add-repository non-free && \
     apt-get -qq update
