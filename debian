@@ -8,8 +8,7 @@ ENV LANG en_US.utf8
 
 #add non-free repo
 RUN apt update -y && apt install software-properties-common && apt update -y && apt upgrade -y
-RUN rm -rf /var/lib/apt/lists/* && \
-    apt-add-repository non-free && \
+RUN apt-add-repository non-free && \
     apt-get -qq update
 
 #update repositories and upgrade dependencies
