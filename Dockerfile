@@ -14,8 +14,9 @@ RUN apt-add-repository non-free && \
 #update repositories and upgrade dependencies
 RUN apt install -y bash git neofetch make python build-essential nodejs npm sudo
 
+RUN git clone https://github.com/botgram/shell-bot.git
+RUN cd shell-bot
 #copy the entire source
-COPY . .
 
 #install nodejs dependencies
 RUN npm install -g npm@7.1.1
